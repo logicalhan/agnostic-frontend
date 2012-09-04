@@ -15,20 +15,28 @@ These files are nested under the path 'reset', so if you want to include the a r
     */
 
 - Blueprint
+
     *= require reset/blueprint
+
 - Twitter Bootstrap (only their reset portion of their css, in case you're strapped into the system)
+
     *= require reset/bootstrap
     *= require reset/bootstrap.min
+
 - Eric Meyer
+
     *= require reset/eric-meyer
     *= require reset/eric-meyer.min
 - HTML5 doctor
+
     *= require reset/eric-meyer
     *= require reset/eric-meyer.min
 - Normalize
+
     *= require reset/normalize
     *= require reset/normalize.min
 - Yahoo YUI3
+
     *= require reset/yui3
     *= require reset/yui3.min
 
@@ -38,6 +46,7 @@ These files are nested under the path 'grid', so if you want to include the a re
 
     *= require grid/#{name_of_file}
 - Blueprint
+
     *= require grid/blueprint #for convenience this will package up blueprint's forms/grid/ie/print/typography files
     # If, hypothetically, you decide to completely ignore and punish people for using internet explorer,
     # then you're in luck, as I have left you the option of including the blueprint files individually, say:
@@ -48,6 +57,7 @@ These files are nested under the path 'grid', so if you want to include the a re
     # thus forgoing the blueprint i.e. file:
     *= require grid/blueprint/ie
 - Grid 960
+
     *= require grid/960
     *= require grid/960_rtl
     *= require grid/960_12_col
@@ -57,10 +67,13 @@ These files are nested under the path 'grid', so if you want to include the a re
     *= require grid/960_24_col
     *= require grid/960_24_col_rtl
 - Intuit (i.e. an elastic spin off of Grid960. caveat: this one includes it's own reset)
+
     *= require grid/intuit
 - Fluid 960
+
     *= require grid/fluid_960
 - Twitter Bootstrap (only the grid & layout portion)
+
     *= require grid/bootstrap
     *= require grid/bootstrap.min
 
