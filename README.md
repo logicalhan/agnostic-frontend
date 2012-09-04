@@ -14,28 +14,28 @@ These files are nested under the path 'reset', so if you want to include the a r
      *= require reset/#{name_of_file}
     */
 
-- Blueprint
+### Blueprint
 
     *= require reset/blueprint
 
-- Twitter Bootstrap (only their reset portion of their css, in case you're strapped into the system)
+### Twitter Bootstrap (only their reset portion of their css, in case you're strapped into the system)
 
     *= require reset/bootstrap
     *= require reset/bootstrap.min
 
-- Eric Meyer
+### Eric Meyer
 
     *= require reset/eric-meyer
     *= require reset/eric-meyer.min
-- HTML5 doctor
+### HTML5 doctor
 
     *= require reset/eric-meyer
     *= require reset/eric-meyer.min
-- Normalize
+### Normalize
 
     *= require reset/normalize
     *= require reset/normalize.min
-- Yahoo YUI3
+### Yahoo YUI3
 
     *= require reset/yui3
     *= require reset/yui3.min
@@ -45,7 +45,7 @@ These files are nested under the path 'reset', so if you want to include the a r
 These files are nested under the path 'grid', so if you want to include the a reset, do so with the following sprocket directive:
 
     *= require grid/#{name_of_file}
-- Blueprint
+### Blueprint
 
     *= require grid/blueprint #for convenience this will package up blueprint's forms/grid/ie/print/typography files
     # If, hypothetically, you decide to completely ignore and punish people for using internet explorer,
@@ -56,7 +56,7 @@ These files are nested under the path 'grid', so if you want to include the a re
     *= require grid/blueprint/typography
     # thus forgoing the blueprint i.e. file:
     *= require grid/blueprint/ie
-- Grid 960
+### Grid 960
 
     *= require grid/960
     *= require grid/960_rtl
@@ -66,13 +66,13 @@ These files are nested under the path 'grid', so if you want to include the a re
     *= require grid/960_16_col_rtl
     *= require grid/960_24_col
     *= require grid/960_24_col_rtl
-- Intuit (i.e. an elastic spin off of Grid960. caveat: this one includes it's own reset)
+### Intuit (i.e. an elastic spin off of Grid960. caveat: this one includes it's own reset)
 
     *= require grid/intuit
-- Fluid 960
+### Fluid 960
 
     *= require grid/fluid_960
-- Twitter Bootstrap (only the grid & layout portion)
+### Twitter Bootstrap (only the grid & layout portion)
 
     *= require grid/bootstrap
     *= require grid/bootstrap.min
