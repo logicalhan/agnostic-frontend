@@ -36,30 +36,41 @@ These files are nested under the path 'reset', so if you want to include the a r
 
 These files are nested under the path 'grid', so if you want to include the a reset, do so with the following sprocket directive:
 
-    //= require grid/#{name_of_file}
+    *= require grid/#{name_of_file}
 - Blueprint
-    //= require grid/blueprint #for convenience this will package up blueprint's forms/grid/ie/print/typography files
+    *= require grid/blueprint #for convenience this will package up blueprint's forms/grid/ie/print/typography files
     # If, hypothetically, you decide to completely ignore and punish people for using internet explorer,
     # then you're in luck, as I have left you the option of including the blueprint files individually, say:
-    //= require grid/blueprint/grid
-    //= require grid/blueprint/print
-    //= require grid/blueprint/forms
-    //= require grid/blueprint/typography
+    *= require grid/blueprint/grid
+    *= require grid/blueprint/print
+    *= require grid/blueprint/forms
+    *= require grid/blueprint/typography
     # thus forgoing the blueprint i.e. file:
-    //= require grid/blueprint/ie
+    *= require grid/blueprint/ie
 - Grid 960
-    //= require grid/960
-    //= require grid/960_rtl
-    //= require grid/960_12_col
-    //= require grid/960_12_col_rtl
-    //= require grid/960_16_col
-    //= require grid/960_16_col_rtl
-    //= require grid/960_24_col
-    //= require grid/960_24_col_rtl
-
-    ... or really any of the ones you would normally find in their download
+    *= require grid/960
+    *= require grid/960_rtl
+    *= require grid/960_12_col
+    *= require grid/960_12_col_rtl
+    *= require grid/960_16_col
+    *= require grid/960_16_col_rtl
+    *= require grid/960_24_col
+    *= require grid/960_24_col_rtl
 - Intuit (i.e. an elastic spin off of Grid960. caveat: this one includes it's own reset)
+    *= require grid/intuit
 - Fluid 960
+    *= require grid/fluid_960
+- Twitter Bootstrap (only the grid & layout portion)
+    *= require grid/bootstrap
+    *= require grid/bootstrap.min
+
+## Included Javascripts
+
+    //= adapt.js # some grid 960 js file
+    //= bootstrap # version 2.1.0
+    //= bootstrap.min # version 2.1.0
+    //= jquery.cookie # how is this not included in jquery core??
+    //= modernizr # how is this not included in jquery core??
 
 ## Installation
 
@@ -74,9 +85,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install agnostic-frontend
-
-
-
 
 
 ## Contributing
