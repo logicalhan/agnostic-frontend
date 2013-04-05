@@ -84,6 +84,7 @@ These files are nested under the path 'grid', so if you want to include the a re
     //= bootstrap.min # version 2.1.0
     //= jquery.cookie # how is this not included in jquery core??
     //= modernizr # how is this not included in jquery core??
+    //= yepnope #conditional loading of files
 
 ## Installation
 
